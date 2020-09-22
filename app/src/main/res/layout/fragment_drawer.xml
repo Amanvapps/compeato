@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:focusable="true"
+    android:weightSum="2">
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.8"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/value_hundred_twenty"
+            android:background="@color/colorPrimary"
+            >
+            <ImageView
+                android:layout_width="@dimen/value_hundred_fifty"
+                android:layout_height="@dimen/value_fifty"
+                android:src="@drawable/campeat_logo_white"
+                android:layout_centerInParent="true"
+                android:tint="@color/white_color"/>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/contactBg"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="horizontal"
+            android:padding="@dimen/value_ten">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:src="@drawable/mail_big" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contact_us"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_fourteen"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/my_deals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="@dimen/value_ten">
+
+            <ImageView
+                android:layout_width="@dimen/value_twenty"
+                android:layout_height="@dimen/value_twenty"
+                android:layout_marginStart="@dimen/value_fifteen"
+                android:src="@drawable/cart" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/value_ten"
+                android:text="@string/my_deals"
+                android:textColor="#4A4A4A"
+                android:textSize="@dimen/text_sixteen"
+                android:typeface="monospace" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/my_subscription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="@dimen/value_ten">
+
+            <ImageView
+                android:layout_width="@dimen/value_twenty"
+                android:layout_height="@dimen/value_twenty"
+                android:layout_marginStart="@dimen/value_fifteen"
+                android:src="@drawable/like" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/value_ten"
+                android:text="@string/my_subscription"
+                android:textColor="#4A4A4A"
+                android:textSize="@dimen/text_sixteen"
+                android:typeface="monospace"
+
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/my_contribution"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            android:padding="@dimen/value_ten">
+
+            <ImageView
+                android:layout_width="@dimen/value_twenty"
+                android:layout_height="@dimen/value_twenty"
+                android:layout_marginStart="@dimen/value_fifteen"
+                android:src="@drawable/hand" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/value_ten"
+                android:text="@string/my_contributions"
+                android:textColor="#4A4A4A"
+                android:textSize="@dimen/text_sixteen"
+
+                />
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/easy_pay"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:padding="@dimen/value_ten">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="@dimen/value_twenty"-->
+                <!--android:layout_height="@dimen/value_twenty"-->
+                <!--android:layout_marginStart="@dimen/value_fifteen"-->
+                <!--android:src="@drawable/qr1" />-->
+
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="@dimen/value_ten"-->
+                <!--android:text="@string/easy_pay"-->
+                <!--android:textColor="#4A4A4A"-->
+                <!--android:textSize="@dimen/text_sixteen"/>-->
+
+
+        <!--</LinearLayout>-->
+
+        <LinearLayout
+            android:id="@+id/my_wallet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="@dimen/value_ten">
+
+            <ImageView
+                android:layout_width="@dimen/value_twenty"
+                android:layout_height="@dimen/value_twenty"
+                android:layout_marginStart="@dimen/value_fifteen"
+                android:src="@drawable/wallet_orange" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/value_ten"
+                android:text="@string/my_wallet"
+                android:textColor="#4A4A4A"
+                android:textSize="@dimen/text_sixteen"
+                android:typeface="monospace" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/earn_points"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="@dimen/value_ten">
+
+            <ImageView
+                android:layout_width="@dimen/value_twenty"
+                android:layout_height="@dimen/value_twenty"
+                android:layout_marginStart="@dimen/value_fifteen"
+                android:src="@drawable/earn_points" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/value_ten"
+                android:text="@string/earn_points"
+                android:textColor="#4A4A4A"
+                android:textSize="@dimen/text_sixteen"
+                android:typeface="monospace" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_invite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="@dimen/value_ten">
+
+            <ImageView
+                android:layout_width="@dimen/value_twenty"
+                android:layout_height="@dimen/value_fifteen"
+                android:layout_marginStart="@dimen/value_fifteen"
+                android:src="@drawable/invite" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/value_ten"
+                android:text="@string/invite_friends"
+                android:textColor="#4A4A4A"
+                android:textSize="@dimen/text_sixteen"
+
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="@dimen/value_ten">
+            <Button
+                android:id="@+id/btn_english"
+                android:layout_width="@dimen/value_hundred"
+                android:layout_height="wrap_content"
+                android:text="@string/english"
+                android:textColor="@color/white_color"
+                android:background="@drawable/btn_english_checked"/>
+            <Button
+                android:id="@+id/btn_korean"
+                android:layout_width="@dimen/value_hundred"
+                android:layout_height="wrap_content"
+                android:text="@string/korean"
+                android:textColor="@color/colorPrimary"
+                android:background="@drawable/btn_korean_unchecked"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_signout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:background="@color/contactBg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/value_twenty"
+            android:layout_height="@dimen/value_twenty"
+            android:layout_marginStart="@dimen/value_thirty"
+            android:src="@drawable/signout" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/value_ten"
+            android:text="@string/sign_out"
+            android:textColor="#4A4A4A"
+            android:textSize="@dimen/text_sixteen"
+
+            />
+
+
+    </LinearLayout>
+</LinearLayout>

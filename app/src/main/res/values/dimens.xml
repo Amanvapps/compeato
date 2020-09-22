@@ -1,0 +1,42 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="value_three">3dp</dimen>
+    <dimen name="value_five">5dp</dimen>
+    <dimen name="value_eight">8dp</dimen>
+    <dimen name="value_ten">10dp</dimen>
+    <dimen name="value_twelve">12dp</dimen>
+    <dimen name="value_fifteen">15dp</dimen>
+    <dimen name="value_eighteen">18dp</dimen>
+    <dimen name="value_twenty">20dp</dimen>
+    <dimen name="value_twenty_five">25dp</dimen>
+    <dimen name="value_thirty">30dp</dimen>
+    <dimen name="value_forty">40dp</dimen>
+    <dimen name="value_fifty">50dp</dimen>
+    <dimen name="value_sixty">60dp</dimen>
+    <dimen name="value_seventy">70dp</dimen>
+    <dimen name="value_eighty">80dp</dimen>
+    <dimen name="value_hundred">100dp</dimen>
+    <dimen name="value_hundred_twenty">120dp</dimen>
+    <dimen name="value_hundred_thirty">130dp</dimen>
+    <dimen name="value_hundred_fifty">150dp</dimen>
+    <dimen name="value_two_hundred_thirty">230dp</dimen>
+    <dimen name="nav_drawer_width">250dp</dimen>
+
+    <dimen name="text_eight">8sp</dimen>
+    <dimen name="text_ten">10sp</dimen>
+    <dimen name="text_twelve">12sp</dimen>
+    <dimen name="text_thirteen">13sp</dimen>
+    <dimen name="text_sixteen">16sp</dimen>
+    <dimen name="text_eighteen">18sp</dimen>
+    <dimen name="text_twenty">20sp</dimen>
+    <dimen name="text_twenty_two">22sp</dimen>
+    <dimen name="text_twenty_four">24sp</dimen>
+
+    <dimen name="text_fifteen">15sp</dimen>
+    <dimen name="text_fourteen">14sp</dimen>
+    <dimen name="value_thirty_five">35dp</dimen>
+
+    <dimen name="detail_backdrop_height">330dp</dimen>
+</resources>

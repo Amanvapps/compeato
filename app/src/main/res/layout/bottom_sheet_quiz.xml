@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/rounded_layout_white_background"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_49sdp"
+        android:layout_marginTop="@dimen/_24sdp"
+        android:layout_marginEnd="@dimen/_49sdp"
+        android:fontFamily="@font/helvetica"
+        android:gravity="center"
+        android:text="@string/you_got_1_correct_answer_out_of_2"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/_18sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialCardView" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/get_deal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="@dimen/_48sdp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:background="@color/colorAccent"
+        android:backgroundTint="@color/colorAccent"
+        android:fontFamily="@font/helveticaneue"
+        android:gravity="center"
+        android:elevation="0dp"
+        app:cornerRadius="@dimen/_5sdp"
+        android:text="@string/_100_tadp"
+        android:textAllCaps="false"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/_13sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answer" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_3sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        app:cardCornerRadius="@dimen/_3sdp"
+        app:cardElevation="0dp"
+        android:background="@color/bottomSheetbuttoncolor"
+        android:backgroundTint="@color/bottomSheetbuttoncolor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

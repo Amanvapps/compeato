@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.activities.MessageActivity"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/value_ten"
+        android:paddingEnd="@dimen/value_ten"
+        android:paddingTop="@dimen/value_ten">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/value_fifty"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/image_desc"
+            android:paddingBottom="@dimen/value_five"
+            android:paddingEnd="@dimen/value_twenty"
+            android:paddingStart="@dimen/value_ten"
+            android:paddingTop="@dimen/value_five"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/messages"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/text_twenty"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="@dimen/value_fifteen"
+            android:layout_height="@dimen/value_fifteen"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/value_ten"
+            android:layout_marginRight="@dimen/value_ten"
+            android:layout_toRightOf="@+id/heading"
+            android:src="@mipmap/mail"
+            android:tint="@color/white_color" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/value_fifteen"
+        android:layout_marginEnd="@dimen/value_fifteen"
+        android:layout_marginTop="@dimen/value_five"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_view_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/paris_baguette"
+            android:textColor="@color/darkGreyColor"
+            android:textSize="@dimen/text_sixteen"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_view_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/value_three"
+            android:maxLines="1"
+            android:text="@string/_50_discount_on_12th_march"
+            android:textColor="@color/darkGreyColor"
+            android:textSize="@dimen/text_fourteen" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/value_five"
+        android:background="@color/greyColor" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_messages"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginStart="@dimen/value_fifteen"
+        android:layout_marginEnd="@dimen/value_fifteen"
+        android:layout_marginTop="@dimen/value_fifteen"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="none" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/value_ten"
+        android:layout_marginStart="@dimen/value_fifty"
+        android:visibility="gone"
+        android:layout_marginBottom="@dimen/value_ten"
+        >
+
+        <TextView
+            android:id="@+id/open_deal_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/value_ten"
+            android:text="@string/open_deal_page"
+            android:textColor="@color/green"
+            android:textSize="@dimen/text_ten"
+            android:textStyle="bold" />
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/value_hundred"
+            layout="@layout/chat_deal_item" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_suggestions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/value_ten"
+        android:layout_marginEnd="@dimen/value_ten"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_view_first"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/border_unfill_primary"
+            android:paddingBottom="@dimen/value_three"
+            android:paddingLeft="@dimen/value_five"
+            android:paddingRight="@dimen/value_five"
+            android:paddingTop="@dimen/value_three"
+            android:layout_marginEnd="@dimen/value_ten"
+            android:text="@string/i_ll_visit_add_to_my_deals"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_ten"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_view_second"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/border_unfill_primary"
+            android:paddingBottom="@dimen/value_three"
+            android:paddingLeft="@dimen/value_five"
+            android:paddingRight="@dimen/value_five"
+            android:paddingTop="@dimen/value_three"
+            android:layout_marginEnd="@dimen/value_ten"
+            android:text="@string/not_sure_remind_me_later"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_ten"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_view_third"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/border_unfill_primary"
+            android:paddingBottom="@dimen/value_three"
+            android:paddingLeft="@dimen/value_five"
+            android:paddingRight="@dimen/value_five"
+            android:paddingTop="@dimen/value_three"
+            android:text="@string/no_thanks_nnot_this_time"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_ten"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/value_five"
+        android:background="@color/greyColor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:padding="@dimen/value_ten"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edit_text_message_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/value_sixty"
+            android:layout_marginBottom="@dimen/value_five"
+            android:background="@drawable/border_grey"
+            android:hint="@string/prompt_message"
+            android:maxHeight="@dimen/value_hundred"
+            android:scrollbars="vertical"
+            android:layout_gravity="center"
+            android:gravity="top"
+            android:textSize="@dimen/text_fourteen"
+            android:textColor="@color/textBlackColor"
+            android:textColorHint="@color/textGreyColor"
+            android:padding="@dimen/value_five"
+            android:inputType="textMultiLine"
+            android:theme="@style/TextLabel" />
+
+        <Button
+            android:id="@+id/button_send"
+            android:layout_width="@dimen/value_sixty"
+            android:layout_height="@dimen/value_twenty_five"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/value_ten"
+            android:layout_marginBottom="@dimen/value_ten"
+            android:background="@color/colorPrimary"
+            android:text="@string/send_message"
+            android:textColor="#ffffff"
+            android:textAllCaps="false"
+            android:textSize="@dimen/text_fourteen"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

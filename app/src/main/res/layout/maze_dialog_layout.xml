@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/dialog_drawable"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/cross"
+            android:layout_width="@dimen/value_twenty_five"
+            android:layout_height="@dimen/value_twenty_five"
+            android:layout_margin="@dimen/value_ten"
+            android:src="@drawable/cross" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/value_ten"
+            android:fontFamily="@font/helvetica"
+            android:text="@string/you_did_it_n_400_tadp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_twelve" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/maze"
+        android:scaleType="fitCenter"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/value_ten"
+        android:text="But playing hard, you sweat a lot"
+        android:textColor="@color/black"
+        android:fontFamily="@font/helveticaneue"
+        android:textSize="@dimen/text_twelve" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/value_five"
+        android:layout_marginBottom="@dimen/value_ten"
+        android:text="REFRESH YOURSELF WITH NIVEA"
+        android:textColor="@color/green"
+        android:fontFamily="@font/helvetica"
+        android:textSize="@dimen/text_thirteen" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:scaleType="fitCenter"
+        android:layout_marginBottom="@dimen/text_ten"/>
+
+</LinearLayout>

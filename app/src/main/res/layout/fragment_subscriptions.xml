@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/image_view_filter_icon"
+        android:layout_width="@dimen/_28sdp"
+        android:layout_height="@dimen/_28sdp"
+        android:contentDescription="@string/image_desc"
+        android:src="@drawable/filter_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/card_view"
+        app:layout_constraintEnd_toStartOf="@+id/image_location_icon"
+        app:layout_constraintStart_toEndOf="@+id/card_view"
+        app:layout_constraintTop_toTopOf="@+id/card_view" />
+
+    <ImageView
+        android:id="@+id/image_location_icon"
+        android:layout_width="@dimen/_28sdp"
+        android:layout_height="@dimen/_28sdp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="@dimen/_6sdp"
+        android:background="@color/white_color"
+        android:padding="@dimen/_3sdp"
+        android:src="@drawable/location"
+        app:layout_constraintBottom_toBottomOf="@+id/image_view_filter_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/image_view_filter_icon"
+        app:layout_constraintTop_toTopOf="@+id/image_view_filter_icon" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toStartOf="@+id/image_view_filter_icon"
+        app:layout_constraintStart_toStartOf="@+id/textView2_rest"
+        app:layout_constraintTop_toBottomOf="@+id/textView2_rest">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtSearch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/edittext_background"
+            android:backgroundTint="@color/edittext_background"
+            android:drawableStart="@drawable/searchicon"
+            android:drawablePadding="@dimen/_5sdp"
+            android:drawableTint="@color/textcolorlight"
+            android:fontFamily="@font/helveticaneue"
+            android:hint="@string/search_restaurants"
+            android:inputType="text"
+            android:paddingStart="@dimen/_8sdp"
+            android:textColor="@color/textcolordark"
+            android:textColorHint="@color/textcolorlight"
+            android:textSize="@dimen/_11sdp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.core.widget.ContentLoadingProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/recycler_view" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:scrollbars="none"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_view" />
+
+
+    <TextView
+        android:id="@+id/text_view_default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_fav_restaurant"
+        android:textColor="@color/textGreyColor"
+        android:textSize="@dimen/_12sdp"
+        android:visibility="gone"
+        android:fontFamily="@font/helveticaneue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2_rest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/helveticaneue_medium"
+        android:text="@string/restaurants"
+        android:textColor="@color/textcolordark"
+        android:textSize="@dimen/_15sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

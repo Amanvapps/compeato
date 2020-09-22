@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_drawable">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/cross"
+                android:layout_width="@dimen/value_twenty_five"
+                android:layout_height="@dimen/value_twenty_five"
+                android:layout_margin="@dimen/value_ten"
+                android:src="@drawable/cross" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/value_ten"
+                android:fontFamily="@font/helveticaneue_medium"
+                android:text="@string/you_did_it_n_400_tadp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_twelve" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/value_ten"
+            android:text="McDonald's is waiting for you"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_twelve" />
+
+</LinearLayout>

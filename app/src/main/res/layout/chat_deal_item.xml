@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/value_hundred"
+    android:orientation="horizontal"
+    android:padding="7dp">
+
+    <RelativeLayout
+        android:layout_width="@dimen/value_eighty"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/burger_one" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            android:background="#cc4a4a4a"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/value_five">
+
+            <TextView
+                android:id="@+id/text_view_sandwich"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/discounts"
+                android:layout_toStartOf="@+id/text_view_discount_banner"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_twelve" />
+
+            <TextView
+                android:id="@+id/text_view_discount_banner"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/discount"
+                android:gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:paddingBottom="2dp"
+                android:paddingStart="@dimen/value_ten"
+                android:text="@string/group_discount_"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/text_eight" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            android:background="@color/colorPrimary"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/value_five">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/time_left"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/text_twelve" />
+
+            <TextView
+                android:id="@+id/time_remain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/value_ten"
+                android:text=" 23 min"
+                android:textColor="@color/deal_red"
+                android:textSize="@dimen/text_twelve" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            android:background="#cc4a4a4a"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/value_five">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/when"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/text_twelve"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="@string/today_between"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/text_twelve" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+{
+  "project_info": {
+    "project_number": "497970482953",
+    "firebase_url": "https://campeat-edf41.firebaseio.com",
+    "project_id": "campeat-edf41",
+    "storage_bucket": "campeat-edf41.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:497970482953:android:dc3f8c027f327603",
+        "android_client_info": {
+          "package_name": "com.appinnovates.campeat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "497970482953-qjqermape182r4449c314uhheu3f974d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.appinnovates.campeat",
+            "certificate_hash": "c7003355cbfa37c67467be046971e7a92009e930"
+          }
+        },
+        {
+          "client_id": "497970482953-iccr2b7967s2tjqvhi9be6t3l4mspnop.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.appinnovates.campeat",
+            "certificate_hash": "2753da342eea0e3301a619a508e52f944b787531"
+          }
+        },
+        {
+          "client_id": "497970482953-btrd75daul9b9r2jeds0j1tvkqvgrrh7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.appinnovates.campeat",
+            "certificate_hash": "fa33510bd8f4792ecd16999a5b7c4126f2bc3522"
+          }
+        },
+        {
+          "client_id": "497970482953-8ckomjfhttaqd817260fr4vhgjck7ffe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.appinnovates.campeat",
+            "certificate_hash": "1cdf5af93919e92fdc978dbf9e67caa8cdd2df72"
+          }
+        },
+        {
+          "client_id": "497970482953-bpqgcjpl7hv8a0tbbt02df4von3l17b8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlBwhZbb5Ul4ExMXGZlTk_bmjeES6FDx4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "497970482953-sjr2vog1qvc85vn6jm5um5rgjqcc1q58.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "497970482953-pqgki33ba0009c60mgtfvco91m4vanvd.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.athenasoft.campeat"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#ffffff"
+android:orientation="vertical">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/colorPrimary"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/value_ten"
+    android:paddingEnd="@dimen/value_ten"
+    android:paddingTop="@dimen/value_ten">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="@dimen/value_fifty"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/image_desc"
+        android:paddingBottom="@dimen/value_five"
+        android:paddingEnd="@dimen/value_twenty"
+        android:paddingStart="@dimen/value_ten"
+        android:paddingTop="@dimen/value_five"
+        android:src="@drawable/back" />
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/my_deals"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/text_twenty"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="@dimen/value_twenty"
+        android:layout_height="@dimen/value_twenty"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/value_fifteen"
+        android:layout_marginRight="@dimen/value_ten"
+        android:layout_toRightOf="@+id/heading"
+        android:src="@drawable/shoppingcartwhite" />
+
+</RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/value_five">
+
+            <ImageView
+                android:layout_width="@dimen/value_thirty"
+                android:layout_height="@dimen/value_thirty"
+                android:layout_marginStart="@dimen/value_five"
+                android:id="@+id/control"
+                android:padding="@dimen/value_five"
+                android:contentDescription="@string/image_desc"
+                android:src="@mipmap/controls" />
+
+            <EditText
+                android:id="@+id/edtSearch"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:inputType="text"
+                android:imeOptions="actionSearch"
+                android:hint="@string/search_restaurant"
+                android:textColor="@color/textGreyColor"
+                android:backgroundTint="@color/white_color"
+                android:textSize="@dimen/text_twelve" />
+
+            <ImageView
+                android:layout_width="@dimen/value_fifteen"
+                android:layout_height="@dimen/value_fifteen"
+                android:layout_marginEnd="@dimen/value_ten"
+                android:src="@drawable/search" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/dividerColor" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/value_five">
+
+            <TextView
+                android:id="@+id/active_deals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/square_orange_button"
+                android:paddingBottom="7dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="7dp"
+                android:text="@string/active_deals"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/text_fourteen" />
+
+            <TextView
+                android:id="@+id/expire_deals"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:paddingBottom="7dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="7dp"
+                android:text="@string/expire_deals"
+                android:textColor="@color/textGreyColor"
+                android:textSize="@dimen/text_fourteen" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/value_five"
+            android:layout_marginRight="@dimen/value_five">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"/>
+
+            <TextView
+                android:id="@+id/text_view_default"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/no_active_deals"
+                android:textSize="@dimen/text_fifteen"
+                android:visibility="gone"
+                android:textColor="@color/textGreyColor"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/frame_layout_filter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dull_black_color"
+        android:visibility="gone" />
+</RelativeLayout>
+
+
+</LinearLayout>

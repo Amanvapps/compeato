@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mydeals_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color">
+
+
+    <TextView
+        android:id="@+id/textView_active_inactive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/helveticaneue_medium"
+        android:text="@string/my_deals"
+        android:textColor="@color/textcolordark"
+        android:textSize="@dimen/_15sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.ContentLoadingProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_marginBottom="@dimen/_20sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/mydeals_recyclerview" />
+    <ImageView
+        android:id="@+id/image_view_location_mydeals"
+        android:layout_width="@dimen/_28sdp"
+        android:layout_height="@dimen/_28sdp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/white_color"
+        android:padding="@dimen/_3sdp"
+        android:src="@drawable/location"
+        app:layout_constraintBottom_toBottomOf="@+id/card_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/card_view" />
+
+
+    <ImageView
+        android:id="@+id/image_view_filter_mydeals"
+        android:layout_width="@dimen/_28sdp"
+        android:layout_height="@dimen/_28sdp"
+        android:layout_marginEnd="4dp"
+        android:contentDescription="@string/image_desc"
+        android:src="@drawable/filter_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/image_view_location_mydeals"
+        app:layout_constraintEnd_toStartOf="@+id/image_view_location_mydeals"
+        app:layout_constraintTop_toTopOf="@+id/image_view_location_mydeals" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toStartOf="@+id/image_view_filter_mydeals"
+        app:layout_constraintStart_toStartOf="@+id/textView_active_inactive"
+        app:layout_constraintTop_toBottomOf="@+id/textView_active_inactive">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtSearch_mydeals"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/edittext_background"
+            android:backgroundTint="@color/edittext_background"
+            android:drawableStart="@drawable/searchicon"
+            android:drawablePadding="@dimen/_5sdp"
+            android:drawableTint="@color/textcolorlight"
+            android:fontFamily="@font/helveticaneue"
+            android:hint="@string/search_restaurants"
+            android:inputType="text"
+            android:paddingStart="@dimen/_8sdp"
+            android:textColor="@color/textcolordark"
+            android:textColorHint="@color/textcolorlight"
+            android:textSize="@dimen/_11sdp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mydeals_recyclerview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_view"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_weight="1">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/no_deals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:fontFamily="@font/helveticaneue_medium"
+        android:text="@string/no_deals"
+        android:textColor="@color/textcolorlight"
+        android:textSize="@dimen/_11sdp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/mydeals_recyclerview"
+        app:layout_constraintTop_toTopOf="@+id/mydeals_recyclerview" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

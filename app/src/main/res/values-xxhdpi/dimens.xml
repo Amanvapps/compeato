@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="value_three">5dp</dimen>
+    <dimen name="value_five">7dp</dimen>
+    <dimen name="value_eight">10dp</dimen>
+    <dimen name="value_ten">12dp</dimen>
+    <dimen name="value_twelve">14dp</dimen>
+    <dimen name="value_fifteen">18dp</dimen>
+    <dimen name="value_eighteen">21dp</dimen>
+    <dimen name="value_twenty">25dp</dimen>
+    <dimen name="value_twenty_five">30dp</dimen>
+    <dimen name="value_thirty">35dp</dimen>
+    <dimen name="value_forty">45dp</dimen>
+    <dimen name="value_fifty">55dp</dimen>
+    <dimen name="value_sixty">65dp</dimen>
+    <dimen name="value_seventy">75dp</dimen>
+    <dimen name="value_eighty">85dp</dimen>
+    <dimen name="value_hundred">105dp</dimen>
+    <dimen name="value_hundred_twenty">120dp</dimen>
+    <dimen name="value_hundred_thirty">150dp</dimen>
+    <dimen name="value_hundred_fifty">170dp</dimen>
+    <dimen name="value_two_hundred_thirty">260dp</dimen>
+    <dimen name="nav_drawer_width">270dp</dimen>
+
+    <dimen name="text_eight">10sp</dimen>
+    <dimen name="text_ten">12sp</dimen>
+    <dimen name="text_twelve">14sp</dimen>
+    <dimen name="text_thirteen">15sp</dimen>
+    <dimen name="text_fourteen">16sp</dimen>
+    <dimen name="text_fifteen">17sp</dimen>
+    <dimen name="text_sixteen">18sp</dimen>
+    <dimen name="text_eighteen">20sp</dimen>
+    <dimen name="text_twenty">22sp</dimen>
+    <dimen name="text_twenty_two">24sp</dimen>
+    <dimen name="text_twenty_four">26sp</dimen>
+    <dimen name="value_thirty_five">40dp</dimen>
+
+</resources>

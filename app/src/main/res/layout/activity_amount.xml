@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white_color"
+    tools:context=".views.activities.AmountActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/_5sdp"
+        android:background="@color/white_color"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:titleTextColor="@color/textcolordark" />
+
+    <TextView
+        android:id="@+id/text_view_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_55sdp"
+        android:text="@string/enter_amount"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_20sdp"
+        android:fontFamily="@font/helveticaneue" />
+
+    <EditText
+        android:id="@+id/edit_text_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_32sdp"
+        android:layout_marginEnd="@dimen/_32sdp"
+        android:layout_marginBottom="@dimen/_32sdp"
+        android:layout_marginTop="@dimen/_32sdp"
+        android:inputType="numberDecimal"
+        android:text="@string/won_symbol"
+        android:textColor="@color/colorPrimary"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:imeOptions="actionDone"
+        tools:ignore="LabelFor" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_discount"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:elevation="0dp"
+        android:background="@drawable/rounded_orange_button"
+        android:paddingLeft="@dimen/value_thirty"
+        android:paddingRight="@dimen/value_thirty"
+        app:cornerRadius="@dimen/_5sdp"
+        android:visibility="gone"
+        android:text="@string/calculate_discount"
+        android:textAllCaps="false"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/_13sdp"
+        android:fontFamily="@font/helveticaneue"/>
+    <Button
+        android:id="@+id/button_pay_counter"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:elevation="0dp"
+        android:background="@drawable/rounded_orange_button"
+        android:paddingLeft="@dimen/value_thirty"
+        android:paddingRight="@dimen/value_thirty"
+        app:cornerRadius="@dimen/_5sdp"
+        android:text="@string/submit_and_pay_at_counter"
+        android:textAllCaps="false"
+        android:textColor="@color/white_color"
+        android:textSize="@dimen/_13sdp"
+        android:fontFamily="@font/helveticaneue"
+        style="?android:attr/borderlessButtonStyle" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/congrats_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        app:cardCornerRadius="@dimen/_8sdp"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/value_fifty">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <TextView
+                android:id="@+id/txt_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/congrats"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:fontFamily="@font/helvetica"
+                android:textColor="@color/blackColor"
+                android:textSize="@dimen/_17sdp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/txt_first"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp"
+                    android:fontFamily="@font/helvetica"
+                    android:layout_marginTop="@dimen/value_eight"
+                    android:text="@string/you_won"/>
+                <TextView
+                    android:id="@+id/txt_middle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="@dimen/_13sdp"
+                    android:fontFamily="@font/helvetica"
+                    android:textColor="@color/colorAccent"
+                    android:layout_marginTop="@dimen/value_eight"
+                    android:text=" ₩10 "/>
+                <TextView
+                    android:id="@+id/txt_last"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp"
+                    android:fontFamily="@font/helvetica"
+                    android:layout_marginTop="@dimen/value_eight"
+                    android:text="@string/coupon"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/redColor"
+                android:textSize="@dimen/_13sdp"
+                android:fontFamily="@font/helvetica"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/value_eight"
+                android:text="@string/show_this_screen_at_the_counter"/>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/badluck_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        app:cardCornerRadius="@dimen/_8sdp"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/value_fifty">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/txt_title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="@string/bad_luck"
+                android:fontFamily="@font/helvetica"
+                android:textColor="@color/blackColor"
+                android:textSize="@dimen/_18sdp"/>
+
+            <TextView
+                android:id="@+id/txt_message_bad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/_52sdp"
+                android:layout_marginEnd="@dimen/_52sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp"
+                android:fontFamily="@font/helvetica"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="@string/you_didn_t_win_free_coupon_but_you_still_have_15_discount"/>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <LinearLayout
+        android:id="@+id/linear_layout_payment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_easy_pay"
+            android:layout_width="@dimen/value_two_hundred_thirty"
+            android:layout_height="@dimen/value_thirty_five"
+            android:background="@drawable/rounded_orange_button"
+            android:text="@string/pay_tad"
+            android:textAllCaps="true"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/text_fourteen"
+            android:textStyle="bold"
+            android:typeface="serif"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources><!--<color name="colorPrimary">#f7854c</color>-->
+    <color name="colorPrimary">#F07739</color>
+    <color name="colorPrimaryDark">#F07739</color>
+    <color name="colorAccent">#FF6E1E</color>
+    <color name="welcomeColor">#FF6300</color>
+    <color name="groupColor">#F7854C</color>
+    <color name="edittext_background">#F5F5F5</color>
+    <color name="dividerColor">#C8C8C8</color>
+    <color name="edittext_bg">#F7F8FA</color>
+    <color name="textBlackColor">#747474</color>
+    <color name="blackColor">#000000</color>
+    <color name="textGreyColor">#9B9B9B</color>
+    <color name="white_color">#FFFFFF</color>
+    <color name="redColor">#d0021b</color>
+    <color name="dull_black_color">#D8D8D8</color>
+    <color name="textcolordark">#202020</color>
+    <color name="textcolorlight">#ADB1B8</color>
+    <color name="greyColor">#E6E6E6</color>
+    <color name="darkGreyColor">#4A4A4A</color>
+    <color name="contactBg">#66d8d8d8</color>
+    <color name="deal_red">#C53748</color>
+    <color name="green">#7ed321</color>
+    <color name="green_light">#7ED321</color>
+    <color name="coupon_color">#E6386604</color>
+    <color name="yellow">#FFC600</color>
+    <color name="black">#000000</color>
+    <color name="darktransparent">#7A000000</color>
+    <color name="light_grey">#F3F3F3</color>
+    <color name="white_grey">#F5F5F5</color>
+    <color name="star_color">#FDC900</color>
+    <color name="navigation_icon_color">#333333</color>
+    <color name="bottomSheetbuttoncolor">#D3A7A7A7</color>
+
+</resources>

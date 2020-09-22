@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".views.activities.EasyPayFinalAmountActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/value_ten"
+        android:paddingEnd="@dimen/value_ten"
+        android:paddingTop="@dimen/value_ten"
+        tools:ignore="RtlSymmetry">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/value_fifty"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/image_desc"
+            android:paddingBottom="@dimen/value_five"
+            android:paddingEnd="@dimen/value_twenty"
+            android:paddingStart="@dimen/value_ten"
+            android:paddingTop="@dimen/value_five"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/easy_pay"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/text_twenty"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/value_fifteen"
+            android:layout_marginEnd="@dimen/value_ten"
+            android:layout_toEndOf="@+id/heading"
+            android:contentDescription="@string/image_desc"
+            android:src="@drawable/qr_white" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_view_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/value_sixty"
+        android:text="@string/enter_amount"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_twenty"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edit_text_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/value_forty"
+        android:layout_marginEnd="@dimen/value_forty"
+        android:layout_marginBottom="@dimen/value_forty"
+        android:layout_marginTop="@dimen/value_thirty"
+        android:inputType="numberDecimal"
+        android:text="₩"
+        android:textColor="@color/colorPrimary"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:imeOptions="actionDone"
+        tools:ignore="LabelFor" />
+
+    <LinearLayout
+        android:id="@+id/linear_layout_payment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button_pay_app"
+            android:layout_width="@dimen/value_two_hundred_thirty"
+            android:layout_height="@dimen/value_thirty_five"
+            android:background="@drawable/rounded_orange_button"
+            android:layout_marginBottom="@dimen/value_ten"
+            android:text="@string/pay_with_app"
+            android:textAllCaps="true"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/text_fourteen"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:visibility="gone"/>
+        <Button
+            android:id="@+id/button_pay_counter"
+            android:layout_width="@dimen/value_two_hundred_thirty"
+            android:layout_height="@dimen/value_thirty_five"
+            android:background="@drawable/rounded_green_button"
+            android:text="@string/pay_counter"
+            android:textAllCaps="true"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/text_fourteen"
+            android:textStyle="bold"
+            android:typeface="serif" />
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="@dimen/value_eighteen"
+        android:id="@+id/button_discount"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/value_thirty_five"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_orange_button"
+        android:paddingLeft="@dimen/value_thirty"
+        android:paddingRight="@dimen/value_thirty"
+        android:text="@string/easy_pay"
+        android:textAllCaps="true"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/text_fourteen"
+        android:textStyle="bold"
+        android:typeface="serif"/>
+</LinearLayout>

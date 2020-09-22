@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.activities.MessagesListActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/value_ten"
+            android:paddingEnd="@dimen/value_ten"
+            android:paddingTop="@dimen/value_ten">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="@dimen/value_fifty"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/image_desc"
+                android:paddingBottom="@dimen/value_five"
+                android:paddingEnd="@dimen/value_twenty"
+                android:paddingStart="@dimen/value_ten"
+                android:paddingTop="@dimen/value_five"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/messages"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/text_twenty"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="@dimen/value_fifteen"
+                android:layout_height="@dimen/value_fifteen"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/value_ten"
+                android:layout_marginRight="@dimen/value_ten"
+                android:layout_toRightOf="@+id/heading"
+                android:src="@mipmap/mail"
+                android:tint="@color/white_color"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/value_twenty"
+                        android:layout_height="@dimen/value_twenty"
+                        android:layout_marginStart="@dimen/value_ten"
+                        android:id="@+id/control"
+                        android:contentDescription="@string/image_desc"
+                        android:src="@mipmap/controls"
+                        android:layout_margin="@dimen/value_ten"/>
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:id="@+id/edt_search"
+                        android:inputType="text"
+                        android:imeOptions="actionSearch"
+                        android:hint="@string/search_restaurant"
+                        android:textColor="@color/textGreyColor"
+                        android:backgroundTint="@color/white_color"
+                        android:textSize="@dimen/text_twelve"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/value_fifteen"
+                        android:layout_height="@dimen/value_fifteen"
+                        android:layout_marginEnd="@dimen/value_ten"
+                        android:src="@drawable/search"
+                        android:contentDescription="@string/image_desc" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/dividerColor" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/value_five"
+                    android:layout_marginRight="@dimen/value_five"
+                    android:layout_marginTop="@dimen/value_five"
+                    android:scrollbars="none"/>
+            </LinearLayout>
+            <FrameLayout
+                android:id="@+id/frame_layout_filter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/dull_black_color"
+                android:visibility="gone" />
+        </RelativeLayout>
+        
+        
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

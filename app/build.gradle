@@ -1,0 +1,110 @@
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+apply plugin: 'com.google.gms.google-services'
+android {
+
+    signingConfigs {
+        release {
+            storeFile file('/home/mohd/Documents/Campeat/Campeat_Android_ui-develop/app/keystore/keys.jks')
+            storePassword 'Ats@1234'
+            keyAlias 'keys'
+            keyPassword 'Ats@1234'
+        }
+    }
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "com.appinnovates.campeat"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionName "3.0.1"
+        versionCode 57
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    repositories {
+        jcenter()
+        maven { url 'http://devrepo.kakao.com:8088/nexus/content/groups/public/' }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation "androidx.work:work-runtime:2.2.0"
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+    implementation 'de.hdodenhof:circleimageview:3.0.0'
+    implementation 'com.crystal:crystalrangeseekbar:1.1.3'
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    implementation 'com.google.firebase:firebase-messaging:20.0.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+//    implementation 'com.parse:parse-android:1.17.1'
+    implementation 'com.google.firebase:firebase-core:17.2.1'
+    implementation 'com.google.firebase:firebase-auth:19.1.0'
+    implementation 'com.google.android.gms:play-services-ads:18.3.0'
+    implementation 'com.google.android.gms:play-services-auth:17.0.0'
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.10.1'
+    implementation 'com.google.maps.android:android-maps-utils:0.5'
+    implementation "androidx.recyclerview:recyclerview:1.0.0"
+    implementation 'com.timehop.stickyheadersrecyclerview:library:0.4.3@aar'
+    implementation 'com.squareup.retrofit2:retrofit:2.6.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.0'
+
+    //facebook sdk libraries
+    implementation 'com.facebook.android:facebook-android-sdk:5.5.1'
+    implementation 'com.facebook.android:facebook-marketing:4.42.0'
+
+    // Bar code Library
+    implementation 'com.google.zxing:core:3.3.0'
+    implementation 'com.google.android.gms:play-services-vision:19.0.0'
+    implementation 'info.androidhive:barcode-reader:1.1.2'
+
+    implementation 'com.github.parse-community:ParseLiveQuery-Android:1.1.0'
+    implementation 'com.github.zawadz88:material-activity-chooser:0.2.2'
+
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    // kakao sdk
+    implementation group: project.KAKAO_SDK_GROUP, name: 'kakaolink', version: project.KAKAO_SDK_VERSION
+    implementation group: project.KAKAO_SDK_GROUP, name: 'kakaotalk', version: project.KAKAO_SDK_VERSION
+    implementation group: project.KAKAO_SDK_GROUP, name: 'usermgmt', version: project.KAKAO_SDK_VERSION
+
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    implementation 'com.jakewharton:butterknife:10.0.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.0.0'
+
+    implementation 'com.google.code.gson:gson:2.8.5'
+
+    implementation 'com.hbb20:ccp:2.3.0'
+
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.github.florent37:expansionpanel:1.2.2'
+
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.14.2'
+    implementation 'com.squareup.okhttp3:okhttp:3.14.2'
+    //gif animation
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.17'
+    implementation 'com.google.android.play:core:1.6.4'
+    implementation "androidx.viewpager2:viewpager2:1.0.0-rc01"
+
+}

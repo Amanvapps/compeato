@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/white_color"
+    android:layout_marginStart="@dimen/text_eight"
+    android:layout_marginEnd="@dimen/text_eight"
+    app:cardElevation="0dp"
+    android:layout_marginTop="@dimen/_5sdp"
+
+    android:layout_marginBottom="@dimen/_5sdp"
+
+
+    android:background="@android:color/white"
+    android:elevation="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_140sdp"
+            android:background="@android:color/transparent"
+            app:cardCornerRadius="@dimen/_8sdp"
+            app:cardElevation="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/discount_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_28sdp"
+                    android:background="@color/green_light"
+                    android:elevation="1dp"
+                    android:fontFamily="@font/helveticaneue_medium"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:paddingTop="@dimen/_1sdp"
+                    android:paddingEnd="@dimen/_8sdp"
+                    android:paddingBottom="@dimen/_1sdp"
+                    android:text="10% off"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/resturant_names"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/helveticaneue_medium"
+            android:maxLines="1"
+            android:text="resturant_names"
+            android:textColor="@color/textcolordark"
+            android:textSize="@dimen/text_fourteen"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/time_layout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+        <TextView
+            android:id="@+id/dealleft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/helveticaneue"
+            android:gravity="center_horizontal"
+            android:visibility="gone"
+            android:text="@string/deals_left"
+            android:textColor="@color/redColor"
+            android:textSize="@dimen/_8sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/deal_left_image"
+            app:layout_constraintStart_toStartOf="@+id/groupdiscount"
+            app:layout_constraintTop_toTopOf="@+id/deal_left_image" />
+
+        <TextView
+            android:id="@+id/dealleft_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:fontFamily="@font/helveticaneue"
+            android:gravity="center_horizontal"
+            android:text="@string/deals_left"
+            android:visibility="gone"
+            android:textColor="@color/redColor"
+            android:textSize="@dimen/_8sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/groupdiscount"
+            app:layout_constraintStart_toEndOf="@+id/deal_left_img"
+            app:layout_constraintTop_toTopOf="@+id/groupdiscount"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/groupdiscount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:fontFamily="@font/helveticaneue"
+            android:gravity="center_horizontal"
+            android:text="@string/group_discount_resource"
+            android:textColor="@color/green_light"
+            android:textSize="@dimen/_8sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/standard_image"
+            app:layout_constraintStart_toEndOf="@+id/standard_image"
+            app:layout_constraintTop_toTopOf="@+id/standard_image" />
+
+
+        <ImageView
+            android:id="@+id/standard_image"
+            android:layout_width="@dimen/_7sdp"
+            android:layout_height="@dimen/_7sdp"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="@color/green_light"
+            app:layout_constraintStart_toStartOf="@+id/resturant_names"
+            app:layout_constraintTop_toBottomOf="@+id/resturant_names" />
+
+        <ImageView
+            android:id="@+id/deal_left_image"
+            android:layout_width="@dimen/_8sdp"
+            android:layout_height="@dimen/_7sdp"
+            android:layout_marginTop="2dp"
+            android:visibility="gone"
+            android:backgroundTint="@color/green_light"
+            android:src="@drawable/tag"
+            android:tint="@color/redColor"
+            app:layout_constraintStart_toStartOf="@+id/standard_image"
+            app:layout_constraintTop_toBottomOf="@+id/standard_image" />
+
+        <ImageView
+            android:id="@+id/deal_left_img"
+            android:layout_width="@dimen/_8sdp"
+            android:layout_height="@dimen/_7sdp"
+            android:layout_marginStart="16dp"
+            android:backgroundTint="@color/green_light"
+            android:src="@drawable/tag"
+            android:visibility="gone"
+            android:tint="@color/redColor"
+            app:layout_constraintBottom_toBottomOf="@+id/standard_image"
+            app:layout_constraintStart_toEndOf="@+id/groupdiscount"
+            app:layout_constraintTop_toTopOf="@+id/standard_image" />
+
+        <TextView
+            android:id="@+id/coupons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:fontFamily="@font/helveticaneue"
+            android:gravity="center_horizontal"
+            android:text="@string/lucky_coupon_"
+            android:textColor="@color/coupon_color"
+            android:textSize="@dimen/_8sdp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/groupdiscount"
+            app:layout_constraintStart_toEndOf="@+id/coupon_img"
+            app:layout_constraintTop_toTopOf="@+id/groupdiscount"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:id="@+id/coupon_img"
+            android:layout_width="@dimen/_8sdp"
+            android:layout_height="@dimen/_7sdp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/tag"
+            android:visibility="gone"
+            android:tint="@color/coupon_color"
+            app:layout_constraintBottom_toBottomOf="@+id/standard_image"
+            app:layout_constraintStart_toEndOf="@+id/groupdiscount"
+            app:layout_constraintTop_toTopOf="@+id/standard_image" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/time_layout"
+            android:layout_width="@dimen/_75sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:background="@color/white_color"
+            android:backgroundTint="@color/white_color"
+            app:cardCornerRadius="@dimen/_7sdp"
+            app:cardElevation="@dimen/_2sdp"
+            app:cardMaxElevation="@dimen/_3sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/cardView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/time_of_deal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/helveticaneue"
+                    android:paddingStart="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingEnd="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:text="@string/_01_15_02"
+                    android:textColor="@color/textcolordark"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

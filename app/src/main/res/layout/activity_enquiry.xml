@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white_color"
+    tools:context=".views.activities.EnquiryActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.4"
+        android:contentDescription="@string/image_desc"
+        android:scaleType="fitXY"
+        android:src="@drawable/background1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/value_forty"
+        android:paddingRight="@dimen/value_forty">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/value_forty"
+            android:fontFamily="@font/helveticaneue_medium"
+            android:text="@string/enqiry_thanks"
+            android:textColor="@color/colorPrimary"
+            android:textAlignment="center"
+            android:textSize="@dimen/_18sdp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/contact_you_soon"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:fontFamily="@font/helvetica"
+            android:textColor="@color/textGreyColor"
+            android:textSize="@dimen/_16sdp" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_done"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/value_fifty"
+            app:cornerRadius="@dimen/_20sdp"
+            android:paddingLeft="@dimen/value_thirty"
+            android:paddingRight="@dimen/value_thirty"
+            android:text="@string/done"
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/_15sdp"
+            android:fontFamily="@font/helveticaneue"/>
+
+
+    </LinearLayout>
+
+</FrameLayout>

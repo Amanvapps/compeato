@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color"
+    android:focusable="true"
+    android:clickable="true"
+    android:id="@+id/redeem_layout"
+    android:focusableInTouchMode="true">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        style="@style/AppTheme.PopupOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/white_color"
+            android:elevation="@dimen/_5sdp"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:titleTextColor="@color/textcolordark">
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <EditText
+        android:id="@+id/text_view_number"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:background="@drawable/otp_round_text"
+        android:backgroundTint="@color/light_grey"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:maxLength="1"
+        android:textColor="@color/white_color"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/text_view_number2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <EditText
+        android:id="@+id/text_view_number2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/otp_round_text"
+        android:backgroundTint="@color/light_grey"
+        android:gravity="center"
+        android:maxLength="1"
+        android:textColor="@color/textcolordark"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/text_view_number"
+        app:layout_constraintEnd_toStartOf="@+id/text_view_number3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/text_view_number"
+        app:layout_constraintTop_toTopOf="@+id/text_view_number" />
+
+    <EditText
+        android:id="@+id/text_view_number3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/otp_round_text"
+        android:backgroundTint="@color/light_grey"
+        android:gravity="center"
+        android:maxLength="1"
+        android:textColor="@color/textcolordark"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/text_view_number2"
+        app:layout_constraintEnd_toStartOf="@+id/text_view_number4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/text_view_number2"
+        app:layout_constraintTop_toTopOf="@+id/text_view_number2" />
+
+    <EditText
+        android:id="@+id/text_view_number4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/otp_round_text"
+        android:backgroundTint="@color/light_grey"
+        android:gravity="center"
+        android:maxLength="1"
+        android:textColor="@color/textcolordark"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/text_view_number3"
+        app:layout_constraintEnd_toStartOf="@+id/text_view_number5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/text_view_number3"
+        app:layout_constraintTop_toTopOf="@+id/text_view_number3" />
+
+    <EditText
+        android:id="@+id/text_view_number5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/otp_round_text"
+        android:backgroundTint="@color/light_grey"
+        android:gravity="center"
+        android:maxLength="1"
+        android:textColor="@color/textcolordark"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/text_view_number4"
+        app:layout_constraintEnd_toStartOf="@+id/text_view_number6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/text_view_number4"
+        app:layout_constraintTop_toTopOf="@+id/text_view_number4" />
+
+    <EditText
+        android:id="@+id/text_view_number6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/otp_round_text"
+        android:backgroundTint="@color/light_grey"
+        android:gravity="center"
+        android:maxLength="1"
+        android:textColor="@color/textcolordark"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/text_view_number5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/text_view_number5"
+        app:layout_constraintTop_toTopOf="@+id/text_view_number5" />
+
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="@dimen/_90sdp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="@font/helvetica"
+        android:gravity="center"
+        android:text="@string/enter_your_redeem_code_to_get_an_access_for_rewarded_coupons"
+        android:textColor="@color/textcolordark"
+        android:textSize="@dimen/_16sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_bar" />
+
+    <androidx.core.widget.ContentLoadingProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/_8sdp"
+        android:fontFamily="@font/helvetica"
+        android:gravity="center"
+        android:text="@string/radeem_code"
+        android:textAlignment="center"
+        android:textColor="@color/blackColor"
+        android:textSize="@dimen/_15sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/app_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.39" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_next"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginStart="@dimen/_24sdp"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:layout_marginEnd="@dimen/_24sdp"
+        android:background="@color/colorAccent"
+        android:backgroundTint="@color/colorAccent"
+        android:fontFamily="@font/helveticaneue_medium"
+        android:text="@string/redeem"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/_15sdp"
+        app:cornerRadius="@dimen/_5sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_number" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/get_deal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginStart="@dimen/_24sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_24sdp"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:strokeWidth="1dp"
+        app:strokeColor="@color/colorAccent"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_next">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/get_deal_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/helveticaneue"
+            android:gravity="center"
+            android:text="@string/my_redeemed_coupons"
+            android:textAllCaps="false"
+            android:textColor="@color/textcolordark"
+            android:textSize="@dimen/_15sdp" />
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.core.widget.ContentLoadingProgressBar
+        android:id="@+id/progressBar_redeem"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:visibility="gone"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

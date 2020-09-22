@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_color">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.4"
+        android:contentDescription="@string/image_desc"
+        android:scaleType="fitXY"
+        android:src="@drawable/background1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/value_eighty"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/value_forty"
+        android:paddingRight="@dimen/value_forty">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/value_sixty"
+            android:contentDescription="@string/image_desc"
+            android:src="@drawable/route" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/value_thirty"
+            android:text="@string/select_city"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_twenty"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/value_twenty"
+            android:gravity="center"
+            android:text="@string/find_best_restaurant"
+            android:textColor="@color/textGreyColor"
+            android:textSize="@dimen/text_sixteen" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/value_thirty">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_view_city_selection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/value_five"
+                    android:layout_marginStart="@dimen/value_five"
+                    android:background="@drawable/rounded_border_grey"
+                    android:drawableLeft="@mipmap/home_interface"
+                    android:drawablePadding="@dimen/value_ten"
+                    android:drawableRight="@drawable/down_arrow"
+                    android:maxLines="1"
+                    android:paddingBottom="@dimen/text_eight"
+                    android:paddingLeft="@dimen/value_fifteen"
+                    android:paddingRight="@dimen/value_fifteen"
+                    android:paddingTop="@dimen/text_eight"
+                    android:text="@string/city"
+                    android:textColor="@color/textBlackColor"
+                    android:textColorHint="@color/textGreyColor"
+                    android:textSize="@dimen/text_fourteen"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/txt_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/value_five"
+                    android:layout_marginStart="@dimen/value_five"
+                    android:layout_marginTop="@dimen/value_twenty"
+                    android:background="@drawable/rounded_border_grey"
+                    android:drawableLeft="@mipmap/ic_area"
+                    android:drawablePadding="@dimen/value_ten"
+                    android:drawableRight="@drawable/down_arrow"
+                    android:maxLines="1"
+                    android:paddingBottom="@dimen/text_eight"
+                    android:paddingLeft="@dimen/value_fifteen"
+                    android:paddingRight="@dimen/value_fifteen"
+                    android:paddingTop="@dimen/text_eight"
+                    android:text="@string/select_area"
+                    android:textColor="@color/textBlackColor"
+                    android:textColorHint="@color/textGreyColor"
+                    android:textSize="@dimen/text_fourteen"
+                    android:visibility="gone"/>
+
+                <Spinner
+                    android:id="@+id/spinner_city"
+                    style="@style/SpinnerTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/value_thirty_five"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:overlapAnchor="false" />
+
+                <Spinner
+                    android:id="@+id/spinner_area"
+                    style="@style/SpinnerTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/value_thirty_five"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="@dimen/value_twenty"
+                    android:overlapAnchor="false" />
+
+                <Button
+                    android:id="@+id/find_restaurant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/value_thirty_five"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/value_thirty_five"
+                    android:background="@drawable/rounded_orange_button"
+                    android:paddingLeft="@dimen/value_fifteen"
+                    android:paddingRight="@dimen/value_fifteen"
+                    android:text="@string/find_restaurant"
+                    android:textAllCaps="true"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/text_fourteen"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view_popup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/value_five"
+                android:layout_marginStart="@dimen/value_five"
+                android:layout_marginEnd="@dimen/value_five"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/value_thirty"
+                android:layout_marginBottom="@dimen/value_five"
+                android:paddingBottom="@dimen/value_ten"
+                app:cardElevation="@dimen/value_ten">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/value_hundred_fifty"
+                    android:padding="@dimen/value_five" />
+
+            </androidx.cardview.widget.CardView>
+        </FrameLayout>
+
+
+    </LinearLayout>
+</FrameLayout>

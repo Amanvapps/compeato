@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.zawadz88:material-activity-chooser:0.2.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bb8f3ad912b5e2ec1871ab983b0be442/jetified-material-activity-chooser-0.2.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bb8f3ad912b5e2ec1871ab983b0be442/jetified-material-activity-chooser-0.2.2/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.zawadz88/material-activity-chooser/0.2.2/4a96b5215fcb70009d44fdb451259fc10f86961b/material-activity-chooser-0.2.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.zawadz88/material-activity-chooser/0.2.2/abfbec5fa414e3852dfef0130cd614dcaac33b41/material-activity-chooser-0.2.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
